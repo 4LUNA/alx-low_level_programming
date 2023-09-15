@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
  * largest_prime_factor - finds the largest prime factor of a number
@@ -10,11 +9,14 @@
 long largest_prime_factor(long n)
 {
 long factor = 2;
+long largest = 0;
 
 while (n > 1)
 {
 if (n % factor == 0)
 {
+if (factor > largest)
+largest = factor;
 n /= factor;
 }
 else
@@ -23,7 +25,7 @@ factor++;
 }
 }
 
-return factor;
+return largest;
 }
 
 int main(void)
