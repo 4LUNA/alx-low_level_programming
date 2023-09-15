@@ -1,24 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - causes an infinite loop
- * Return: 0
+ * main - Entry point of the program
+ *
+ * This function causes an infinite loop.
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
-int i;
-
-printf("Infinite loop incoming :(\n");
-
-i = 0;
-
-while (i < 10)
 {
-putchar(i + '0'); // Convert the integer to a character
-i++;
-}
-
+int i;
+printf("Infinite loop incoming :(\n");
+i = 0;
+/* Commenting out the infinite loop
+ * while (i < 10)
+ * {
+ * putchar(i);
+ * }
+ */
 printf("Infinite loop avoided! \\o/\n");
-
 return (0);
 }
+
