@@ -14,7 +14,7 @@ char temp;
 
 while (s[length] != '\0')
 length++;
- 
+
 /*Reverse the string*/
 for (i = 0, j = length - 1; i < j; i++, j--)
 {
