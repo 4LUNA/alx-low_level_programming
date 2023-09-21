@@ -26,5 +26,5 @@ j++;
 }
 }
 
-return str;
+return (str);
 }
