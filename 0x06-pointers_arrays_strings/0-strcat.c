@@ -20,7 +20,7 @@ while (*src)
 dest++;
 src++;
 }
-    
+  
 *dest = '\0';
 
 return ptr;
